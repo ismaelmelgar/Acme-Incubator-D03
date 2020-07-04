@@ -1,0 +1,69 @@
+
+package acme.features.authenticated.toolRecords;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import acme.entities.toolRecords.ToolRecord;
+import acme.framework.components.Model;
+import acme.framework.components.Request;
+import acme.framework.entities.Authenticated;
+import acme.framework.services.AbstractShowService;
+
+@Service
+public class AuthenticatedToolRecordShowService implements AbstractShowService<Authenticated, ToolRecord> {
+
+	// Internal state ------------------------------------------------------------------
+	@Autowired
+	AuthenticatedToolRecordRepository repository;
+
+
+	// AbstractListService<Authenticated, ToolRecord> interface ------------------------------
+	@Override
+	public boolean authorise(final Request<ToolRecord> request) {
+		assert request != null;
+
+		return true;
+	}
+
+	@Override
+	public void unbind(final Request<ToolRecord> request, final ToolRecord entity, final Model model) {
+		assert request != null;
+		assert entity != null;
+		assert model != null;
+
+		request.unbind(entity, model, "title", "activitySector", "inventor", "description", "web", "email", "sourceType", "stars");
+
+		Boolean indication = entity.getSourceType();
+		String language = request.getLocale().getDisplayLanguage();
+
+		if (indication == true) {
+			if (language.equals("Spanish")) {
+				model.setAttribute("sourceType", "Codigo abierto");
+			} else {
+				model.setAttribute("sourceType", "Open-Source");
+			}
+		} else {
+			if (language.equals("Spanish")) {
+				model.setAttribute("sourceType", "Codigo cerrado");
+			} else {
+				model.setAttribute("sourceType", "Closed-source");
+			}
+		}
+
+	}
+
+	@Override
+	public ToolRecord findOne(final Request<ToolRecord> request) {
+		assert request != null;
+
+		ToolRecord result;
+		int id;
+
+		id = request.getModel().getInteger("id");
+		result = this.repository.findOneById(id);
+
+		return result;
+	}
+
+}

@@ -1,0 +1,40 @@
+
+package acme.entities.bulletins;
+
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+import javax.validation.constraints.Past;
+
+import org.hibernate.validator.constraints.Length;
+
+import acme.framework.entities.DomainEntity;
+import lombok.Getter;
+import lombok.Setter;
+
+@Entity
+@Getter
+@Setter
+public class MinuesaBulletin extends DomainEntity {
+
+	//Serialisation identifier ---------------------------------------
+
+	private static final long	serialVersionUID	= 1L;
+
+	//Attributes -----------------------------------------------------
+
+	@Length(min = 1, max = 50)
+	private String				author;
+
+	@Column(length = 500)
+	@Length(min = 1, max = 500)
+	private String				text;
+
+	@Temporal(TemporalType.TIMESTAMP)
+	@Past
+	private Date				moment;
+
+}
