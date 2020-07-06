@@ -58,6 +58,9 @@ master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
 master.menu.customisation.list = Configuration
 
+master.menu.administrator.inquiries.list = Inquirie
+master.menu.administrator.inquiries.create = Create inquiries
+
 # master.menu.provider ########################################################
 
 master.menu.provider = Provider

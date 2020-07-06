@@ -9,7 +9,6 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
 import javax.validation.constraints.Email;
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 
@@ -55,7 +54,7 @@ public class Inquirie extends DomainEntity {
 	@NotNull
 	private Money				maxMoney;
 
-	@NotBlank
+	@Length(min = 1, max = 50)
 	@Email
 	private String				email;
 

@@ -73,6 +73,11 @@
 			<!--  Customisation -->
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.customisation.list" action="/administrator/customisation/list" />
+			<!--  Inquirie -->
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.administrator.inquiries.list" action="/administrator/inquirie/list" />
+			<acme:menu-suboption code="master.menu.administrator.inquiries.create" access="hasRole('Administrator')"
+				action="/administrator/inquirie/create" />
 		</acme:menu-option>
 
 		<%--------------------Provider--------------------%>
