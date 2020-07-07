@@ -76,8 +76,15 @@
 			<!--  Inquirie -->
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.administrator.inquiries.list" action="/administrator/inquirie/list" />
-			<acme:menu-suboption code="master.menu.administrator.inquiries.create" access="hasRole('Administrator')"
-				action="/administrator/inquirie/create" />
+			<acme:menu-suboption code="master.menu.administrator.inquiries.create" action="/administrator/inquirie/create" />
+			<!--  Challenge -->
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.administrator.challenges.list" action="/administrator/challenge/list" />
+			<acme:menu-suboption code="master.menu.administrator.challenges.create" action="/administrator/challenge/create" />
+			<!--  Technology Record -->
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.administrator.technologyRecords.list" action="/administrator/technology-record/list" />
+			<acme:menu-suboption code="master.menu.administrator.technologyRecords.create" action="/administrator/technology-record/create" />
 		</acme:menu-option>
 
 		<%--------------------Provider--------------------%>

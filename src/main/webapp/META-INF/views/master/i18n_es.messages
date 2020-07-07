@@ -60,7 +60,13 @@ master.menu.administrator.shutdown = Parar el sistema
 master.menu.customisation.list = Configuracion
 
 master.menu.administrator.inquiries.list = Consultas
-master.menu.administrator.inquiries.create = Crear consultas
+master.menu.administrator.inquiries.create = Crear consulta
+
+master.menu.administrator.challenges.list = Retos
+master.menu.administrator.challenges.create = Crear reto
+
+master.menu.administrator.technologyRecords.list = Registro de tecnologias
+master.menu.administrator.technologyRecords.create = Crear registro de tecnologia
 
 # master.menu.provider ########################################################
 
