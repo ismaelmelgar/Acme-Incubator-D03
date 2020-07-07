@@ -11,7 +11,7 @@
 administrator.inquirie.label.title = Titulo
 administrator.inquirie.label.creationMoment = Creacion
 administrator.inquirie.label.deadline = Fecha limite
-administrator.inquirie.label.description = Creacion
+administrator.inquirie.label.description = Descripcion
 administrator.inquirie.label.minMoney = Min. Dinero
 administrator.inquirie.label.maxMoney = Max. Dinero
 administrator.inquirie.label.email = Email

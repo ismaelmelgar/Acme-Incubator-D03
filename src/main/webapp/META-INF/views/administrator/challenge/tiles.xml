@@ -18,12 +18,12 @@
 
 <tiles-definitions>
 
-	<definition name="administrator/customisation/list" extends="master">
-		<put-attribute name="body" type="template" value="../administrator/customisation/list.jsp" />
+	<definition name="administrator/challenge/list" extends="master">		
+		<put-attribute name="body" type="template" value="../administrator/challenge/list.jsp" />
 	</definition>
 	
-	<definition name="administrator/customisation/form" extends="master">
-		<put-attribute name="body" type="template" value="../administrator/customisation/form.jsp" />
+	<definition name="administrator/challenge/form" extends="master">		
+		<put-attribute name="body" type="template" value="../administrator/challenge/form.jsp" />
 	</definition>
-
+	
 </tiles-definitions>

@@ -12,3 +12,7 @@ administrator.customisation.label.spamWords = Palabras de spam
 administrator.customisation.label.threshold = Umbral(%)
 administrator.customisation.label.activiySectors = Sectores de actividad
 
+administrator.customisation.button.update = Actualizar
+
+administrator.customisation.button.return = Volver
+
