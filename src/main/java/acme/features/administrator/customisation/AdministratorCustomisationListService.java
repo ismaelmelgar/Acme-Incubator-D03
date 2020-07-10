@@ -46,6 +46,6 @@ public class AdministratorCustomisationListService implements AbstractListServic
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "spamWords", "threshold", "activiySectors");
+		request.unbind(entity, model, "spamWords", "threshold", "activitySectors");
 	}
 }

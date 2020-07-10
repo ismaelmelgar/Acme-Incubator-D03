@@ -7,6 +7,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Past;
 
 import org.hibernate.validator.constraints.Length;
@@ -26,11 +27,14 @@ public class MelgarBulletin extends DomainEntity {
 
 	//Attributes -----------------------------------------------------
 
+	@Column(length = 50)
 	@Length(min = 1, max = 50)
+	@NotBlank
 	private String				author;
 
 	@Column(length = 500)
 	@Length(min = 1, max = 500)
+	@NotBlank
 	private String				text;
 
 	@Temporal(TemporalType.TIMESTAMP)

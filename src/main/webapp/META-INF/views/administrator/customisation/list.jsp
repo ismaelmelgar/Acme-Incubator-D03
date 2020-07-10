@@ -19,7 +19,7 @@
 <acme:list>
 	<acme:list-column code="administrator.customisation.label.spamWords" path="spamWords" width="40%"/>
 	<acme:list-column code="administrator.customisation.label.threshold" path="threshold" width="40%"/><br>
-	<acme:list-column code="administrator.customisation.label.activiySectors" path="activiySectors" width="20%"/>		
+	<acme:list-column code="administrator.customisation.label.activitySectors" path="activitySectors" width="20%"/>		
 </acme:list>
 
 

@@ -7,6 +7,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 
@@ -27,11 +28,16 @@ public class Notice extends DomainEntity {
 	private static final long	serialVersionUID	= 1L;
 
 	//Attributes -----------------------------------------------------
+
+	@Column(length = 200)
 	@Length(min = 1, max = 200)
 	@URL
+	@NotBlank
 	private String				header;
 
+	@Column(length = 100)
 	@Length(min = 1, max = 100)
+	@NotBlank
 	private String				title;
 
 	@Temporal(TemporalType.TIMESTAMP)
@@ -45,9 +51,11 @@ public class Notice extends DomainEntity {
 
 	@Column(length = 500)
 	@Length(min = 1, max = 500)
+	@NotBlank
 	private String				body;
 
-	@Length(min = 1, max = 200)
+	@Column(length = 200)
+	@Length(max = 200)
 	@URL
 	private String				link;
 

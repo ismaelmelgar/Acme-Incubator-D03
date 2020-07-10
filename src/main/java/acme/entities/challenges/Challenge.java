@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
@@ -28,7 +29,9 @@ public class Challenge extends DomainEntity {
 
 	//Attributes -----------------------------------------------------
 
+	@Column(length = 50)
 	@Length(min = 1, max = 50)
+	@NotBlank
 	private String				title;
 
 	@Temporal(TemporalType.TIMESTAMP)
@@ -37,23 +40,30 @@ public class Challenge extends DomainEntity {
 
 	@Column(length = 500)
 	@Length(min = 1, max = 500)
+	@NotBlank
 	private String				description;
 
+	@Column(length = 200)
 	@Length(min = 1, max = 200)
+	@NotBlank
 	private String				rookieGoal;
 
 	@Valid
 	@NotNull
 	private Money				rookieReward;
 
+	@Column(length = 200)
 	@Length(min = 1, max = 200)
+	@NotBlank
 	private String				averageGoal;
 
 	@Valid
 	@NotNull
 	private Money				averageReward;
 
+	@Column(length = 200)
 	@Length(min = 1, max = 200)
+	@NotBlank
 	private String				expertGoal;
 
 	@Valid

@@ -9,6 +9,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
 import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 
@@ -30,7 +31,9 @@ public class Inquirie extends DomainEntity {
 
 	//Attributes -----------------------------------------------------
 
+	@Column(length = 50)
 	@Length(min = 1, max = 50)
+	@NotBlank
 	private String				title;
 
 	@Temporal(TemporalType.TIMESTAMP)
@@ -44,6 +47,7 @@ public class Inquirie extends DomainEntity {
 
 	@Column(length = 500)
 	@Length(min = 1, max = 500)
+	@NotBlank
 	private String				description;
 
 	@Valid
@@ -54,8 +58,10 @@ public class Inquirie extends DomainEntity {
 	@NotNull
 	private Money				maxMoney;
 
+	@Column(length = 50)
 	@Length(min = 1, max = 50)
 	@Email
+	@NotBlank
 	private String				email;
 
 }

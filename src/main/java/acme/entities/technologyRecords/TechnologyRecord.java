@@ -4,6 +4,7 @@ package acme.entities.technologyRecords;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
@@ -25,25 +26,36 @@ public class TechnologyRecord extends DomainEntity {
 
 	//Attributes -----------------------------------------------------
 
+	@Column(length = 50)
 	@Length(min = 1, max = 50)
+	@NotBlank
 	private String				title;
 
+	@Column(length = 50)
 	@Length(min = 1, max = 50)
+	@NotBlank
 	private String				sector;
 
+	@Column(length = 50)
 	@Length(min = 1, max = 50)
+	@NotBlank
 	private String				inventor;
 
 	@Column(length = 500)
 	@Length(min = 1, max = 500)
+	@NotBlank
 	private String				description;
 
+	@Column(length = 200)
 	@Length(min = 1, max = 200)
 	@URL
+	@NotBlank
 	private String				web;
 
+	@Column(length = 50)
 	@Length(min = 1, max = 50)
 	@Email
+	@NotBlank
 	private String				email;
 
 	@NotNull

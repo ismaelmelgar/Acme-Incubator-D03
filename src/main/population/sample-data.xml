@@ -208,7 +208,7 @@
 		<property name="spamWords"
 			value="sex, hard core, viagra, cialis, nigeria, you’ve won, million dollar, sexo, duro, has ganado, un millon de dolares" />
 		<property name="threshold" value="2.50" />
-		<property name="activiySectors"
+		<property name="activitySectors"
 			value="Technology, Science, Arts, Business, Health, Tecnología, Ciencia, Artes, Negocios, Salud" />
 	</bean>
 
