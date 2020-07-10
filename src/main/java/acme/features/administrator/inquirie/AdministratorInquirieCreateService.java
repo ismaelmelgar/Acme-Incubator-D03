@@ -1,7 +1,9 @@
 
 package acme.features.administrator.inquirie;
 
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -65,6 +67,26 @@ public class AdministratorInquirieCreateService implements AbstractCreateService
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+
+		Boolean isDeadlineNotVeryClose, isMinMoneyLessMaxMoney, isMaxMoneyHigherMinMoney;
+
+		if (!errors.hasErrors("deadline")) {
+			Calendar c = new GregorianCalendar();
+			c.add(Calendar.MONTH, 1);
+			Date minDeadline = c.getTime();
+			isDeadlineNotVeryClose = entity.getDeadline().after(minDeadline);
+			errors.state(request, isDeadlineNotVeryClose, "deadline", "administrator.inquirie.error.deadline.veryClose");
+		}
+
+		if (!errors.hasErrors("minMoney")) {
+			isMinMoneyLessMaxMoney = entity.getMinMoney().getAmount() < entity.getMaxMoney().getAmount();
+			errors.state(request, isMinMoneyLessMaxMoney, "minMoney", "administrator.inquirie.error.minMoney.LessMaxMoney");
+		}
+
+		if (!errors.hasErrors("maxMoney")) {
+			isMaxMoneyHigherMinMoney = entity.getMaxMoney().getAmount() > entity.getMinMoney().getAmount();
+			errors.state(request, isMaxMoneyHigherMinMoney, "maxMoney", "administrator.inquirie.error.maxMoney.HigherMinMoney");
+		}
 
 	}
 

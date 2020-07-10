@@ -18,6 +18,12 @@ administrator.challenge.label.averageReward = Recompnesa de Promedio
 administrator.challenge.label.expertGoal = Objetivo de Experto
 administrator.challenge.label.expertReward = Recompensa de Experto
 
+administrator.challenge.error.deadline.veryClose = La fecha limite esta muy cerca de la fecha de creacion. Debe registrarse al menos un mes en el futuro
+administrator.challenge.error.reward.euro = La recompensa debe estar en  € o en EUR
+administrator.challenge.error.rookieReward.amount = La recompensa para novatos debe ser inferior a la recompensa para promedios y expertos
+administrator.challenge.error.averageReward.amount = La recompensa para promedios debe ser superior a la recompensa de los novatos e inferior a la de los expertos
+administrator.challenge.error.expertReward.amount = La recompensa para expertos debe ser superior a la recompensa para novatos y promedios
+
 administrator.challenge.button.update = Actualizar
 administrator.challenge.button.delete = Borrar
 administrator.challenge.button.create = Crear

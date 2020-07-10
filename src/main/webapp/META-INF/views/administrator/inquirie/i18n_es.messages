@@ -16,6 +16,10 @@ administrator.inquirie.label.minMoney = Min. Dinero
 administrator.inquirie.label.maxMoney = Max. Dinero
 administrator.inquirie.label.email = Email
 
+administrator.inquirie.error.deadline.veryClose = La fecha limite esta muy cerca de la fecha de creacion. Debe registrarse al menos un mes en el futuro
+administrator.inquirie.error.minMoney.LessMaxMoney = El dinero minimo debe ser mayor que el dinero maximo
+administrator.inquirie.error.maxMoney.HigherMinMoney = El dinero maximo debe ser superior que el dinero minimo
+
 administrator.inquirie.button.create = Crear
 administrator.inquirie.button.update = Actualizar
 administrator.inquirie.button.delete = Borrar

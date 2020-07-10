@@ -18,6 +18,12 @@ administrator.challenge.label.averageReward = Average Reward
 administrator.challenge.label.expertGoal = Expert Goal
 administrator.challenge.label.expertReward = Expert Reward
 
+administrator.challenge.error.deadline.veryClose = The deadline is very close to the creation date. You must register at least one month in the future
+administrator.challenge.error.reward.euro = The reward must be in € or EUR
+administrator.challenge.error.rookieReward.amount = Reward for rookies must be lower than the reward for averages and experts
+administrator.challenge.error.averageReward.amount = Reward for averages must be higher than the reward for rookies and lower than the reward for experts. 
+administrator.challenge.error.expertReward.amount = Reward for experts must be higher than the reward for rookies and averages
+
 administrator.challenge.button.update = Update
 administrator.challenge.button.delete = Delete
 administrator.challenge.button.create = Create
