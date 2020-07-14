@@ -62,14 +62,14 @@
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.challenges.list" action="/authenticated/challenge/list" />
 		</acme:menu-option>
-		
+
 		<%--------------------Administrator--------------------%>
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list" />
 			<acme:menu-separator />
+			<!--  Notices -->
 			<acme:menu-suboption code="master.menu.notices.list" action="/administrator/notice/list" />
-			<acme:menu-separator />
-			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown" />
+			<acme:menu-suboption code="master.menu.administrator.notices.create" action="/administrator/notice/create" />
 			<!--  Customisation -->
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.customisation.list" action="/administrator/customisation/list" />
@@ -85,6 +85,9 @@
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.administrator.technologyRecords.list" action="/administrator/technology-record/list" />
 			<acme:menu-suboption code="master.menu.administrator.technologyRecords.create" action="/administrator/technology-record/create" />
+			<!--  Shutdown -->
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown" />
 		</acme:menu-option>
 
 		<%--------------------Provider--------------------%>

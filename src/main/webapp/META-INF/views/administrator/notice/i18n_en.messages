@@ -14,6 +14,7 @@ administrator.notice.label.creation = Creation:
 administrator.notice.label.deadline = Deadline:
 administrator.notice.label.body = Body:
 administrator.notice.label.link = Link:
+administrator.notice.form.button.create = Create
 administrator.notice.form.button.return = Return
 
 administrator.notice.list.label.header = Header
@@ -22,3 +23,6 @@ administrator.notice.list.label.creation = Creation
 administrator.notice.list.label.deadline = Deadline
 administrator.notice.list.label.body = Body
 administrator.notice.label.link = Link
+administrator.notice.label.finalMode = Final mode
+
+administrator.notice.error.deadline = Deadline must be after the moment of creation.

@@ -32,7 +32,7 @@ public class AdministratorNoticeShowService implements AbstractShowService<Admin
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "header", "title", "creation", "deadline", "body", "link");
+		request.unbind(entity, model, "header", "title", "creation", "deadline", "body", "link", "finalMode");
 
 	}
 
