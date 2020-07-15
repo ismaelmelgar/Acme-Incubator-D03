@@ -31,8 +31,8 @@ public class Notice extends DomainEntity {
 
 	@Column(length = 200)
 	@Length(min = 1, max = 200)
-	@URL
 	@NotBlank
+	@URL
 	private String				header;
 
 	@Column(length = 100)
@@ -58,5 +58,8 @@ public class Notice extends DomainEntity {
 	@Length(max = 200)
 	@URL
 	private String				link;
+
+	@NotNull
+	private Boolean				finalMode;
 
 }

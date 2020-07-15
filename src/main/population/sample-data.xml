@@ -168,6 +168,7 @@
 		<property name="body" value="El chileno es una opción bien situada pero el club maneja más nombres." />
 		<property name="link"
 			value="https://sevilla.abc.es/deportes/alfinaldelapalmera/noticias/real-betis/betis-pellegrini-opcion-avanzada-pero-no-la-unica-206691-1593551311.html5" />
+		<property name="finalMode" value="true" />
 	</bean>
 
 	<bean id="notice02" class="acme.entities.notices.Notice">
@@ -178,6 +179,7 @@
 		<property name="deadline" value="2020/10/10 10:10" />
 		<property name="body" value="La noticia ha sido confirmada en la web del club verdiblanco." />
 		<property name="link" value="https://www.marca.com/2015/06/15/futbol/equipos/betis/1434402032.html" />
+		<property name="finalMode" value="true" />
 	</bean>
 
 	<bean id="notice03" class="acme.entities.notices.Notice">
@@ -189,6 +191,7 @@
 			value="El entrenador del Betis declaró que estar en el Betis tras jugar en el Dortmund y el Barça no es un buen síntoma para el defensa." />
 		<property name="link"
 			value="https://www.sport.es/es/noticias/laliga/dardo-setien-bartra-algo-estaras-haciendo-bien-para-estar-betis-7134635" />
+		<property name="finalMode" value="true" />
 	</bean>
 
 	<bean id="notice04" class="acme.entities.notices.Notice">
@@ -200,6 +203,7 @@
 			value="El entrenador del Betis declaró que estar en el Betis tras jugar en el Dortmund y el Barça no es un buen síntoma para el defensa." />
 		<property name="link"
 			value="https://www.sport.es/es/noticias/laliga/dardo-setien-bartra-algo-estaras-haciendo-bien-para-estar-betis-7134635" />
+		<property name="finalMode" value="true" />
 	</bean>
 
 	<!-- Customisation -->

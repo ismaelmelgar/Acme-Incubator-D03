@@ -14,6 +14,7 @@ administrator.notice.label.creation = Fecha de creacion:
 administrator.notice.label.deadline = Fecha limite:
 administrator.notice.label.body = Cuerpo:
 administrator.notice.label.link = Enlace:
+administrator.notice.form.button.create = Crear
 administrator.notice.form.button.return = Return
 
 administrator.notice.list.label.header = Cabecera
@@ -22,3 +23,6 @@ administrator.notice.list.label.creation = Fecha de creacion
 administrator.notice.list.label.deadline = Fecha limite
 administrator.notice.list.label.body = Cuerpo
 administrator.notice.label.link = Enlace
+administrator.notice.label.finalMode = Definitiva
+
+administrator.notice.error.deadline = La fecha limite debe ser posterior a la fecha de creación.
