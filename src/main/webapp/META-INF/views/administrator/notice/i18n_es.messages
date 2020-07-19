@@ -23,6 +23,6 @@ administrator.notice.list.label.creation = Fecha de creacion
 administrator.notice.list.label.deadline = Fecha limite
 administrator.notice.list.label.body = Cuerpo
 administrator.notice.label.link = Enlace
-administrator.notice.label.finalMode = Definitiva
+administrator.notice.label.finalMode = Confirmar creacion
 
 administrator.notice.error.deadline = La fecha limite debe ser posterior a la fecha de creación.
