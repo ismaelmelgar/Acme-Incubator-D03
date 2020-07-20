@@ -68,21 +68,17 @@ public class AdministratorOvertureUpdateService implements AbstractUpdateService
 		assert entity != null;
 		assert errors != null;
 
-		Calendar calendar;
-		Date minimunDeadline;
-
 		if (!errors.hasErrors("deadline")) {
-			calendar = new GregorianCalendar();
-			calendar.add(Calendar.DAY_OF_MONTH, 7);
-			minimunDeadline = calendar.getTime();
-			errors.state(request, entity.getDeadline().after(minimunDeadline), "deadline", "administrator.overture.form.error.tooClose");
+			Calendar calendar = new GregorianCalendar();
+			Date currentMoment = calendar.getTime();
+			errors.state(request, request.getModel().getDate("deadline").after(currentMoment), "deadline", "administrator.overture.error.deadline");
 		}
 		if (!errors.hasErrors("maxMoney")) {
-			errors.state(request, entity.getMaxMoney().getCurrency().equals("EUR") || entity.getMaxMoney().getCurrency().equals("€"), "maxMoney", "administrator.overture.form.error.zoneEurMax");
+			errors.state(request, entity.getMaxMoney().getCurrency().equals("EUR") || entity.getMaxMoney().getCurrency().equals("€"), "maxMoney", "administrator.overture.form.error.format");
 		}
 		if (!errors.hasErrors("minMoney")) {
-			errors.state(request, entity.getMinMoney().getCurrency().equals("EUR") || entity.getMinMoney().getCurrency().equals("€"), "minMoney", "administrator.overture.form.error.zoneEurMin");
-			errors.state(request, entity.getMaxMoney().getAmount() > entity.getMinMoney().getAmount(), "maxMoney", "administrator.overture.form.error.maxR");
+			errors.state(request, entity.getMinMoney().getCurrency().equals("EUR") || entity.getMinMoney().getCurrency().equals("€"), "minMoney", "administrator.overture.form.error.format");
+			errors.state(request, entity.getMaxMoney().getAmount() > entity.getMinMoney().getAmount(), "maxMoney", "administrator.overture.form.error.max");
 		}
 
 	}

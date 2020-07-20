@@ -15,6 +15,9 @@ administrator.tool-record.label.description = Descripcion:
 administrator.tool-record.label.web = Web:
 administrator.tool-record.label.email = Email:
 administrator.tool-record.label.sourceType = Modelo:
+administrator.tool-record.label.sourceType.update = Modelo (si va a actualizar este registro, vuelva a comprobar el tipo de modelo que desea):
+administrator.tool-record.label.sourceType.open = Codigo abierto
+administrator.tool-record.label.sourceType.closed = Codigo cerrado
 administrator.tool-record.label.stars = Valoracion:
 
 administrator.tool-record.form.buttom.create = Crear

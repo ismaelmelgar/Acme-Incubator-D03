@@ -16,20 +16,34 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form>
-	<acme:form-textbox code="administrator.tool-record.label.title" path="title"/>
-	<acme:form-textbox code="administrator.tool-record.label.activitySector" path="activitySector"/>
-	<acme:form-textbox code="administrator.tool-record.label.inventor" path="inventor"/>
-	<acme:form-textbox code="administrator.tool-record.label.description" path="description"/>
-	<acme:form-url code="administrator.tool-record.label.web" path="web"/>
-	<acme:form-textbox code="administrator.tool-record.label.email" path="email"/>
-	<acme:form-textbox code="administrator.tool-record.label.sourceType" path="sourceType" placeholder="true (Open-source/Codigo abierto) - false (Closed-source/Codigo cerrado)"/>
-	<acme:form-textbox code="administrator.tool-record.label.stars" path="stars"/>
+	<acme:form-textbox code="administrator.tool-record.label.title" path="title" />
+	<acme:form-textbox code="administrator.tool-record.label.activitySector" path="activitySector" />
+	<acme:form-textbox code="administrator.tool-record.label.inventor" path="inventor" />
+	<acme:form-textbox code="administrator.tool-record.label.description" path="description" />
+	<acme:form-url code="administrator.tool-record.label.web" path="web" />
+	<acme:form-textbox code="administrator.tool-record.label.email" path="email" />
+
+	<jstl:if test="${command == 'show'}">
+		<acme:form-select code="administrator.tool-record.label.sourceType.update" path="sourceType">
+			<acme:form-option code="administrator.tool-record.label.sourceType.open" value="true" />
+			<acme:form-option code="administrator.tool-record.label.sourceType.closed" value="false" />
+		</acme:form-select>
+	</jstl:if>
 	
-	<acme:form-submit test="${command == 'create'}" code="administrator.tool-record.form.buttom.create" action="create"/>
-	<acme:form-submit test="${command == 'show'}" code="administrator.tool-record.form.buttom.update" action="update"/>
-	<acme:form-submit test="${command == 'show'}" code="administrator.tool-record.form.buttom.delete" action="delete"/>
-	<acme:form-submit test="${command == 'update'}" code="administrator.tool-record.form.buttom.update" action="update"/>
-	
-	<acme:form-submit test="${command == 'delete'}" code="administrator.tool-record.form.buttom.delete" action="delete"/>
-  	<acme:form-return code="administrator.notice.form.button.return"/>
+	<jstl:if test="${command == 'create'}">
+		<acme:form-select code="administrator.tool-record.label.sourceType" path="sourceType">
+			<acme:form-option code="administrator.tool-record.label.sourceType.open" value="true" />
+			<acme:form-option code="administrator.tool-record.label.sourceType.closed" value="false" />
+		</acme:form-select>
+	</jstl:if>
+
+	<acme:form-textbox code="administrator.tool-record.label.stars" path="stars" />
+
+	<acme:form-submit test="${command == 'create'}" code="administrator.tool-record.form.buttom.create" action="create" />
+	<acme:form-submit test="${command == 'show'}" code="administrator.tool-record.form.buttom.update" action="update" />
+	<acme:form-submit test="${command == 'show'}" code="administrator.tool-record.form.buttom.delete" action="delete" />
+	<acme:form-submit test="${command == 'update'}" code="administrator.tool-record.form.buttom.update" action="update" />
+
+	<acme:form-submit test="${command == 'delete'}" code="administrator.tool-record.form.buttom.delete" action="delete" />
+	<acme:form-return code="administrator.notice.form.button.return" />
 </acme:form>

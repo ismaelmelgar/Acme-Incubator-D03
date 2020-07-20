@@ -72,11 +72,11 @@ public class AdministratorOvertureCreateService implements AbstractCreateService
 			errors.state(request, request.getModel().getDate("deadline").after(currentMoment), "deadline", "administrator.overture.error.deadline");
 		}
 		if (!errors.hasErrors("maxMoney")) {
-			errors.state(request, entity.getMaxMoney().getCurrency().equals("EUR") || entity.getMaxMoney().getCurrency().equals("€"), "maxMoney", "administrator.overture.form.error.zoneEurMax");
+			errors.state(request, entity.getMaxMoney().getCurrency().equals("EUR") || entity.getMaxMoney().getCurrency().equals("€"), "maxMoney", "administrator.overture.form.error.format");
 		}
 		if (!errors.hasErrors("minMoney")) {
-			errors.state(request, entity.getMinMoney().getCurrency().equals("EUR") || entity.getMinMoney().getCurrency().equals("€"), "minMoney", "administrator.overture.form.error.zoneEurMin");
-			errors.state(request, entity.getMaxMoney().getAmount() > entity.getMinMoney().getAmount(), "maxMoney", "administrator.overture.form.error.maxR");
+			errors.state(request, entity.getMinMoney().getCurrency().equals("EUR") || entity.getMinMoney().getCurrency().equals("€"), "minMoney", "administrator.overture.form.error.format");
+			errors.state(request, entity.getMaxMoney().getAmount() > entity.getMinMoney().getAmount(), "maxMoney", "administrator.overture.form.error.max");
 		}
 
 	}

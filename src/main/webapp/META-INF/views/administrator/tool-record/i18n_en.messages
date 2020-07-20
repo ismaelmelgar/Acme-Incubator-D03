@@ -15,6 +15,9 @@ administrator.tool-record.label.description = Description:
 administrator.tool-record.label.web = WebSite:
 administrator.tool-record.label.email = Email:
 administrator.tool-record.label.sourceType = Source type:
+administrator.tool-record.label.sourceType.update = Source type (if you are going to update this tool record, re-check your desired source type):
+administrator.tool-record.label.sourceType.open = Open-source
+administrator.tool-record.label.sourceType.closed = Closed-source
 administrator.tool-record.label.stars = Rating:
 
 administrator.tool-record.form.buttom.create = Create
