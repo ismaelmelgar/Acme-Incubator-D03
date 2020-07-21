@@ -29,6 +29,8 @@
 
     drop table if exists `consumer`;
 
+    drop table if exists `customisation`;
+
     drop table if exists `inquirie`;
 
     drop table if exists `melgar_bulletin`;

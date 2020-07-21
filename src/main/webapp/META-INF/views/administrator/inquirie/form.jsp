@@ -25,10 +25,10 @@
 			path="creationMoment"
 			readonly="true"/>
 	</jstl:if>
-	<acme:form-textbox code="administrator.inquirie.label.deadline" path="deadline"/>
+	<acme:form-moment code="administrator.inquirie.label.deadline" path="deadline"/>
 	<acme:form-textarea code="administrator.inquirie.label.description" path="description"/>
-	<acme:form-textbox code="administrator.inquirie.label.minMoney" path="minMoney"/>
-	<acme:form-textbox code="administrator.inquirie.label.maxMoney" path="maxMoney"/>
+	<acme:form-money code="administrator.inquirie.label.minMoney" path="minMoney"/>
+	<acme:form-money code="administrator.inquirie.label.maxMoney" path="maxMoney"/>
 	<acme:form-textbox code="administrator.inquirie.label.email" path="email"/>  
 
 	<acme:form-submit test="${command == 'show' }"

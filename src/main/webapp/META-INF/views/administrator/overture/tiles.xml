@@ -18,12 +18,12 @@
 
 <tiles-definitions>
 
-	<definition name="administrator/tool-record/form" extends="master">		
-		<put-attribute name="body" type="template" value="../administrator/tool-record/form.jsp" />
-	</definition>	
-
-	<definition name="administrator/tool-record/list" extends="master">		
-		<put-attribute name="body" type="template" value="../administrator/tool-record/list.jsp" />
+	<definition name="administrator/overture/form" extends="master">		
+		<put-attribute name="body" type="template" value="../administrator/overture/form.jsp" />	
+		</definition>
+	
+<definition name="administrator/overture/list" extends="master">
+		<put-attribute name="body" type="template" value="../administrator/overture/list.jsp" />
 	</definition>
 
 </tiles-definitions>

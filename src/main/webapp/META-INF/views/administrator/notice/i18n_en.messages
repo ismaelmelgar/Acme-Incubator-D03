@@ -23,6 +23,6 @@ administrator.notice.list.label.creation = Creation
 administrator.notice.list.label.deadline = Deadline
 administrator.notice.list.label.body = Body
 administrator.notice.label.link = Link
-administrator.notice.label.finalMode = Final mode
+administrator.notice.label.finalMode = Confirm creation
 
 administrator.notice.error.deadline = Deadline must be after the moment of creation.
