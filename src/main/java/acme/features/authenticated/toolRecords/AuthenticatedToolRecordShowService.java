@@ -34,7 +34,7 @@ public class AuthenticatedToolRecordShowService implements AbstractShowService<A
 
 		request.unbind(entity, model, "title", "activitySector", "inventor", "description", "web", "email", "sourceType", "stars");
 
-		Boolean indication = entity.getSourceType();
+		boolean indication = entity.isSourceType();
 		String language = request.getLocale().getDisplayLanguage();
 
 		if (indication == true) {
