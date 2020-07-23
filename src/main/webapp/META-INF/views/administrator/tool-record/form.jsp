@@ -22,21 +22,7 @@
 	<acme:form-textbox code="administrator.tool-record.label.description" path="description" />
 	<acme:form-url code="administrator.tool-record.label.web" path="web" />
 	<acme:form-textbox code="administrator.tool-record.label.email" path="email" />
-
-	<jstl:if test="${command == 'show'}">
-		<acme:form-select code="administrator.tool-record.label.sourceType.update" path="sourceType">
-			<acme:form-option code="administrator.tool-record.label.sourceType.open" value="true" />
-			<acme:form-option code="administrator.tool-record.label.sourceType.closed" value="false" />
-		</acme:form-select>
-	</jstl:if>
-	
-	<jstl:if test="${command == 'create'}">
-		<acme:form-select code="administrator.tool-record.label.sourceType" path="sourceType">
-			<acme:form-option code="administrator.tool-record.label.sourceType.open" value="true" />
-			<acme:form-option code="administrator.tool-record.label.sourceType.closed" value="false" />
-		</acme:form-select>
-	</jstl:if>
-
+	<acme:form-checkbox code="administrator.tool-record.label.sourceType.check" path="sourceType"/>
 	<acme:form-textbox code="administrator.tool-record.label.stars" path="stars" />
 
 	<acme:form-submit test="${command == 'create'}" code="administrator.tool-record.form.buttom.create" action="create" />
