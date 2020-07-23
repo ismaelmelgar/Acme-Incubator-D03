@@ -14,7 +14,7 @@ anonymous.tool-record.label.inventor = Inventor:
 anonymous.tool-record.label.description = Description:
 anonymous.tool-record.label.web = WebSite:
 anonymous.tool-record.label.email = Email:
-anonymous.tool-record.label.sourceType = Source type:
+anonymous.tool-record.label.sourceType = Source type (is open-source if the box is checked)
 anonymous.tool-record.label.stars = Rating:
 anonymous.tool-record.form.button.return = Return
 

@@ -35,23 +35,6 @@ public class AuthenticatedTechnologyRecordShowService implements AbstractShowSer
 
 		request.unbind(entity, model, "title", "sector", "inventor", "description", "web", "email", "indication", "star");
 
-		Boolean indication = entity.getIndication();
-		String language = request.getLocale().getDisplayLanguage();
-
-		if (indication == true) {
-			if (language.equals("Spanish")) {
-				model.setAttribute("indication", "Codigo abierto");
-			} else {
-				model.setAttribute("indication", "Open-Source");
-			}
-		} else {
-			if (language.equals("Spanish")) {
-				model.setAttribute("indication", "Codigo cerrado");
-			} else {
-				model.setAttribute("indication", "Closed-source");
-			}
-		}
-
 	}
 
 	@Override

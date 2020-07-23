@@ -14,7 +14,7 @@ authenticated.tool-record.label.inventor = Inventor:
 authenticated.tool-record.label.description = Description:
 authenticated.tool-record.label.web = WebSite:
 authenticated.tool-record.label.email = Email:
-authenticated.tool-record.label.sourceType = Source type:
+authenticated.tool-record.label.sourceType = Source type (is open-source if the box is checked)
 authenticated.tool-record.label.stars = Rating:
 authenticated.tool-record.form.button.return = Return
 

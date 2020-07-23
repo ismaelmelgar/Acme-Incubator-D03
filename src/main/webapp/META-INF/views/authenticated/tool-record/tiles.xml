@@ -18,12 +18,12 @@
 
 <tiles-definitions>
 
-	<definition name="administrator/tool-record/form" extends="master">		
-		<put-attribute name="body" type="template" value="../administrator/tool-record/form.jsp" />
+	<definition name="authenticated/tool-record/form" extends="master">		
+		<put-attribute name="body" type="template" value="../authenticated/tool-record/form.jsp" />
 	</definition>	
 
-	<definition name="administrator/tool-record/list" extends="master">		
-		<put-attribute name="body" type="template" value="../administrator/tool-record/list.jsp" />
+	<definition name="authenticated/tool-record/list" extends="master">		
+		<put-attribute name="body" type="template" value="../authenticated/tool-record/list.jsp" />
 	</definition>
 
 </tiles-definitions>

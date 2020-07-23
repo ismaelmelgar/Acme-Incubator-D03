@@ -14,7 +14,7 @@ anonymous.technologyRecord.label.inventor = Autor:
 anonymous.technologyRecord.label.description = Descripcion:
 anonymous.technologyRecord.label.web = Web:
 anonymous.technologyRecord.label.email = Email:
-anonymous.technologyRecord.label.indication = Modelo:
+anonymous.technologyRecord.label.indication = Modelo (es codigo abierto si la casilla esta marcada)
 anonymous.technologyRecord.label.star = Valoracion:
 
 anonymous.technologyRecord.form.button.return = Volver

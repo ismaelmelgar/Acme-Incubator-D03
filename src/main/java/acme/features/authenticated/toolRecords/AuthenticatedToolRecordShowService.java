@@ -34,23 +34,6 @@ public class AuthenticatedToolRecordShowService implements AbstractShowService<A
 
 		request.unbind(entity, model, "title", "activitySector", "inventor", "description", "web", "email", "sourceType", "stars");
 
-		boolean indication = entity.isSourceType();
-		String language = request.getLocale().getDisplayLanguage();
-
-		if (indication == true) {
-			if (language.equals("Spanish")) {
-				model.setAttribute("sourceType", "Codigo abierto");
-			} else {
-				model.setAttribute("sourceType", "Open-Source");
-			}
-		} else {
-			if (language.equals("Spanish")) {
-				model.setAttribute("sourceType", "Codigo cerrado");
-			} else {
-				model.setAttribute("sourceType", "Closed-source");
-			}
-		}
-
 	}
 
 	@Override

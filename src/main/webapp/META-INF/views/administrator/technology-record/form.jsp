@@ -23,7 +23,7 @@
 	<acme:form-textarea code="administrator.technologyRecord.label.description" path="description"/>
 	<acme:form-textbox code="administrator.technologyRecord.label.web" path="web"/>
 	<acme:form-textbox code="administrator.technologyRecord.label.email" path="email"/>
-	<acme:form-textbox code="administrator.technologyRecord.label.indication" path="indication"/>
+	<acme:form-checkbox code="administrator.technologyRecord.label.indication" path="indication"/>
 	<acme:form-textbox code="administrator.technologyRecord.label.star" path="star"/>
 	
 	<acme:form-submit test="${command == 'show' }"

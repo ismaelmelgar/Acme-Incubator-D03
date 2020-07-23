@@ -14,7 +14,7 @@ authenticated.technologyRecord.label.inventor = Inventor:
 authenticated.technologyRecord.label.description = Description:
 authenticated.technologyRecord.label.web = WebSite:
 authenticated.technologyRecord.label.email = Email:
-authenticated.technologyRecord.label.indication = Source Type:
+authenticated.technologyRecord.label.indication = Source type (is open-source if the box is checked)
 authenticated.technologyRecord.label.star = Rating:
 
 authenticated.technologyRecord.form.button.return = Return

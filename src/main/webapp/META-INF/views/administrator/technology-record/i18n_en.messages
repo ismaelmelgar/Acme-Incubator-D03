@@ -14,7 +14,7 @@ administrator.technologyRecord.label.inventor = Inventor
 administrator.technologyRecord.label.description = Description
 administrator.technologyRecord.label.web = WebSite
 administrator.technologyRecord.label.email = Email
-administrator.technologyRecord.label.indication = Source Type
+administrator.technologyRecord.label.indication = Source type (It is open-source if the box is checked)
 administrator.technologyRecord.label.star = Rating
 
 administrator.technologyRecord.button.update = Update

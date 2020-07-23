@@ -22,7 +22,7 @@
 	<acme:form-textbox code="authenticated.tool-record.label.description" path="description"/>
 	<acme:form-textbox code="authenticated.tool-record.label.web" path="web"/>
 	<acme:form-textbox code="authenticated.tool-record.label.email" path="email"/>
-	<acme:form-textbox code="authenticated.tool-record.label.sourceType" path="sourceType"/>
+	<acme:form-checkbox code="authenticated.tool-record.label.sourceType" path="sourceType"/>
 	<acme:form-textbox code="authenticated.tool-record.label.stars" path="stars"/>
 
   	<acme:form-return code="authenticated.notice.form.button.return"/>

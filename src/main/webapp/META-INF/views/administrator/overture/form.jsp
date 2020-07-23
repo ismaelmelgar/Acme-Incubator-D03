@@ -17,11 +17,16 @@
 
 <acme:form>
 	<acme:form-textbox code="administrator.overture.form.label.title" path="title" />
-	<acme:form-moment code="administrator.overture.form.label.creation" path="creation" readonly="true"/>
+	<jstl:if test = "${command != 'create' }">
+		<acme:form-moment
+			code="administrator.overture.form.label.creation"
+			path="creation"
+			readonly="true"/>
+	</jstl:if>
 	<acme:form-moment code="administrator.overture.form.label.deadline" path="deadline" />
 	<acme:form-textarea code="administrator.overture.form.label.description" path="description" />
-	<acme:form-money code="administrator.overture.form.label.maxMoney" path="maxMoney" />
 	<acme:form-money code="administrator.overture.form.label.minMoney" path="minMoney" />
+	<acme:form-money code="administrator.overture.form.label.maxMoney" path="maxMoney" />
 	<acme:form-textbox code="administrator.overture.form.label.email" path="email" />
 
 	<acme:form-submit test="${command == 'show' }"

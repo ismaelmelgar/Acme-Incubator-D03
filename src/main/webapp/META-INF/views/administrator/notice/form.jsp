@@ -19,7 +19,12 @@
 
 	<acme:form-url code="anonymous.notice.label.header" path="header" />
 	<acme:form-textbox code="anonymous.notice.label.title" path="title" />
-	<acme:form-moment code="administrator.notice.label.creation" path="creation" readonly="true" />
+	<jstl:if test = "${command != 'create' }">
+		<acme:form-moment
+			code="administrator.notice.label.creation"
+			path="creation"
+			readonly="true"/>
+	</jstl:if>
 	<acme:form-moment code="anonymous.notice.label.deadline" path="deadline" />
 	<acme:form-textarea code="anonymous.notice.label.body" path="body" />
 	<acme:form-url code="anonymous.notice.label.link" path="link" />

@@ -14,7 +14,7 @@ anonymous.tool-record.label.inventor = Autor:
 anonymous.tool-record.label.description = Descripcion:
 anonymous.tool-record.label.web = Web:
 anonymous.tool-record.label.email = Email:
-anonymous.tool-record.label.sourceType = Modelo:
+anonymous.tool-record.label.sourceType = Modelo (es codigo abierto si la casilla esta marcada)
 anonymous.tool-record.label.stars = Valoracion:
 anonymous.tool-record.form.button.return = Volver
 
